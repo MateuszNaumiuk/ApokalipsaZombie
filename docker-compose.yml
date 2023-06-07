@@ -1,0 +1,20 @@
+version: '3'
+services:
+  php-apache:
+    image: zombieapocalypse
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    volumes:
+      - ./app:/var/www/html
+
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_USER: docker
+      POSTGRES_PASSWORD: docker
+      POSTGRES_DB: docker
+    ports:
+      - 5432:5432
