@@ -6,6 +6,9 @@ Pomysly:=
 5. Kazdego dnia resources sie zuzywaja
 6. wymyslic cos do logiki dla zombie !!!!
 
+pomysl 2:
+1. jest mapa na ktorej sa regiony, zaczyna sie apokalipsa i na kazdym regionie jest wskaznik ile jest zombie, ludzie walcza z zombie o resuorces
+
 baza danych:
 1. Humans:
   - Full Name
