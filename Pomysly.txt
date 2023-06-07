@@ -9,6 +9,9 @@ Pomysly:=
 pomysl 2:
 1. jest mapa na ktorej sa regiony, zaczyna sie apokalipsa i na kazdym regionie jest wskaznik ile jest zombie, ludzie walcza z zombie o resuorces
 
+pomysl 3:
+baza jest jako ogolnie ludzie i ogolnie zombie, zombie moga atakowac ludzi przez co zwieksza sie ich liczba, ludzie moga atakowac zombie, zmniejszajac ilosc zombie, i moga wtedy otrzymac resources
+
 baza danych:
 1. Humans:
   - Full Name
