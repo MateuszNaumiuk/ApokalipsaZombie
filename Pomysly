@@ -1,0 +1,27 @@
+Pomysly:=
+1. zaczyna rozwijac sie apokalipsa zombie, ludzie musza walczyc z zombie o resources i przezycie
+2. Turowy system ( jedna tura to jeden dzien )  ?
+3. W kazdej turze mozna wykonac x aktywnosc     ?
+4. Mozna rozkazywac ludziom isc po resources, wtedy jest szansa ze przyniosa cos, uda im sie zrekrutowac kogos, albo umra od zombie
+5. Kazdego dnia resources sie zuzywaja
+6. wymyslic cos do logiki dla zombie !!!!
+
+baza danych:
+1. Humans:
+  - Full Name
+  - HP
+  - IsDead
+  
+2. Zombies:
+  - Full Name
+  - HasBeenHuman
+  - IsDead
+  
+3. Resources:
+  - Type
+  - Nutritions
+  - DMG
+  - HowManyUsesLeft
+
+Do ogarniecia:
+1. Docker compose
