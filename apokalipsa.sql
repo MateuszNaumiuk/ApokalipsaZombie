@@ -1,31 +1,34 @@
+-- stworz baze apokalipsa
 CREATE DATABASE "apokalipsa";
+
+-- uzyj bazy apokalipsa
 \c apokalipsa;
 
-CREATE TABLE IF NOT EXISTS humans (
-    HumanID SERIAL PRIMARY KEY,
-    HumanFullName VARCHAR(64) NOT NULL,
-    HumanHP INT
-);
-
--- data insert
-INSERT INTO humans (HumanFullName, HumanHP) VALUES ('John Doe', 100);
-INSERT INTO humans (HumanFullName, HumanHP) VALUES ('David Smith', 100);
-
+-- stworz tabele zombies jezeli nie istnieje
 CREATE TABLE IF NOT EXISTS zombies (
-    ZombieID SERIAL PRIMARY KEY,
-    ZombieFullName VARCHAR(64) NOT NULL,
-    ZombieHP INT
+    ZombieAmount SERIAL PRIMARY KEY
 );
 
-INSERT INTO zombies (ZombieFullName, ZombieHP) VALUES ('Michael Miller', 100);
-INSERT INTO zombies (ZombieFullName, ZombieHP) VALUES ('Daniel Wilson', 100);
+-- wprowadzenie danych do tabeli zombies
+INSERT INTO zombies (ZombieAmount) VALUES (100);
 
+-- stworz tabele resources jezeli nie istnieje
 CREATE TABLE IF NOT EXISTS resources (
-    ResourceID SERIAL PRIMARY KEY,
-    Nutritions INT,
-    DMG INT,
-    UsesLeft INT
+    FoodAmount INT,
+    WeaponsAmount INT,
+    MedicalSuppliesAmount INT
 );
 
-INSERT INTO resources (Nutritions, DMG, UsesLeft) VALUES (12, 0, 1);
-INSERT INTO resources (Nutritions, DMG, UsesLeft) VALUES (0, 18, 20);
+-- wprowadzenie danych do tabeli resources
+INSERT INTO resources (FoodAmount, WeaponsAmount, MedicalSuppliesAmount) VALUES (600, 1000, 2000);
+
+-- stworz tabele humans jezeli nie istnieje
+CREATE TABLE IF NOT EXISTS humans (
+    HumanAmount SERIAL PRIMARY KEY,
+    HumanHP INT,
+    HumanFood INT,
+    HumanDef INT
+);
+
+-- wprowadzenie danych do tabeli humans
+INSERT INTO humans (HumanAmount, HumanHP, HumanFood, HumanDef) VALUES (100, 100, 80, 25);
