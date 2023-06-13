@@ -1,22 +1,24 @@
 version: '3'
 services:
+# pierwszy kontener z serwerem apache
   php-apache:
-    image: zombieapocalypse
+    image: zombieapocalypse # nazwa kontenera
     build:
       context: .
       dockerfile: Dockerfile
-    ports:
+    ports: # przekierowanie serwera apache na porcie 80
       - 80:80
-    volumes:
+    volumes: # zamontowanie katalogu app do katalogu /var/www/html
       - ./app:/var/www/html
 
+# drugi kontener z serverem Postgresql
   postgres:
-    image: postgres
-    environment:
+    image: postgres # okreslenie obrazu dla drugiego kontenera
+    environment: # zmienne srodowiskowe dla kontenera oraz bazy danych
       POSTGRES_USER: docker
       POSTGRES_PASSWORD: docker
       POSTGRES_DB: docker
-    ports:
+    ports: # przekierowanie serwera Postgresql na port 5432
       - 5432:5432
-    volumes:
+    volumes: # zamontowanie pliku apokalipsa.sql, zawierajacego dane do stworzenia tabeli potrzebnej dla projektu, do katalogu /docker-entrypoint-initdb.d/apokalipsa.sql
       - ./apokalipsa.sql:/docker-entrypoint-initdb.d/apokalipsa.sql
