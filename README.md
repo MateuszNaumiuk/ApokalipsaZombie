@@ -60,7 +60,7 @@ Każdego dnia jest szansa ze ludzie znajdą jakieś zasoby, zostana zaatakowani 
 - Sekcja "Dostępne zasoby na świecie" pokazuje dostępne zasoby, w tym jedzenie, broń i środki medyczne.
 - Sekcja "Informacje z danego dnia" wyświetla wynik konsoli, dostarczając informacji na temat wydarzeń i aktualizacji zachodzących w symulacji.
 
-## Struktura projektu
+# Struktura projektu
 - app/index.php - Główny plik aplikacji zawierający logikę symulacji apokalipsy zombie.
 - app/conn.php - Plik łączący z bazą danych.
 - app/funkcje.php - Plik zawierający wszystkie potrzebne funkcje do działania aplikacji.
