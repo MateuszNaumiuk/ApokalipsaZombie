@@ -37,22 +37,22 @@ Każdego dnia jest szansa ze ludzie znajdą jakieś zasoby, zostana zaatakowani 
 # interakcja z projektem
 - aplikacja pozwala opcje takie jak, dodawanie ludzi, dodawanie zombie, i dodawanie zasobów, poniżej opisane są instrukcje jak to robić.
 
-## Dodawanie ludzi
+### Dodawanie ludzi
 1. Otwórz aplikacje php w przeglądarce.
 2. Kliknij przycisk "Dodaj ludzi".
 3. Do aplikacji zostanie dodana grupa ludzi.
 
-## Dodawanie zombie
+### Dodawanie zombie
 1. Otwórz aplikacje php w przeglądarce.
 2. Kliknij przycisk "Dodaj zombie".
 3. Do aplikacji zostanie dodana grupa zombie.
 
-## Dodawanie zasobów
+### Dodawanie zasobów
 1. Otwórz aplikacje php w przeglądarce.
 2. Kliknij przycisk "Dodaj zasoby".
 3. Do aplikacji zostaną dodane zasoby.
 
-# aktualne informacje o symulacji
+## aktualne informacje o symulacji
 - Aplikacja PHP zapewnia interfejs użytkownika umożliwiający przeglądanie aktualnego stanu symulacji oraz wszelkich istotnych informacji. Interfejs składa się z różnych sekcji wyświetlających informacje na temat zombie, ludzi i dostępnych zasobów.
 - Możesz zobaczyć aktualny dzień apokalipsy w sekcji "Dzień apokalipsy nr". Liczba ta reprezentuje bieżący dzień symulacji.
 - Sekcja "Zombie" wyświetla informacje na temat zombie, w tym liczbę obecnych zombie.
@@ -60,7 +60,7 @@ Każdego dnia jest szansa ze ludzie znajdą jakieś zasoby, zostana zaatakowani 
 - Sekcja "Dostępne zasoby na świecie" pokazuje dostępne zasoby, w tym jedzenie, broń i środki medyczne.
 - Sekcja "Informacje z danego dnia" wyświetla wynik konsoli, dostarczając informacji na temat wydarzeń i aktualizacji zachodzących w symulacji.
 
-# Struktura projektu
+## Struktura projektu
 - app/index.php - Główny plik aplikacji zawierający logikę symulacji apokalipsy zombie.
 - app/conn.php - Plik łączący z bazą danych.
 - app/funkcje.php - Plik zawierający wszystkie potrzebne funkcje do działania aplikacji.
